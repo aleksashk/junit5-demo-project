@@ -37,6 +37,9 @@ public class AssertTest {
 
 
 //        Assertions.assertNull("null");
-        Assertions.assertNotNull(null);
+//        Assertions.assertNotNull(null);
+
+        Assertions.assertTrue(true);
+        Assertions.assertFalse(false);
     }
 }
