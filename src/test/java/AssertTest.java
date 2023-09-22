@@ -1,8 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.Duration;
-
 public class AssertTest {
     @Test
     public void test() {
@@ -39,18 +37,27 @@ public class AssertTest {
 //
 //        Assertions.assertTrue(true);
 //        Assertions.assertFalse(false);
-
-        Assertions.assertTimeout(Duration.ofMillis(500), () -> {
-            System.out.println("Start");
+//
+//        Assertions.assertTimeout(Duration.ofMillis(500), () -> {
+//            System.out.println("Start");
 //            Thread.sleep(501);
-            System.out.println("Finish");
-        });
+//            System.out.println("Finish");
+//        });
+//
+//
+//        Assertions.assertTimeoutPreemptively(Duration.ofMillis(500), () -> {
+//            System.out.println("start");
+//            Thread.sleep(600);
+//            System.out.println("finish");
+//        });
 
+//        Assertions.assertThrows(NullPointerException.class,()->{
+//            throw new NullPointerException();
+//        });
 
-        Assertions.assertTimeoutPreemptively(Duration.ofMillis(500), () -> {
-            System.out.println("start");
-            Thread.sleep(600);
-            System.out.println("finish");
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            int a = 2 + 2;
         });
     }
+
 }
