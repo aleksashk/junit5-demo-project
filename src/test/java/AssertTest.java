@@ -55,9 +55,12 @@ public class AssertTest {
 //            throw new NullPointerException();
 //        });
 
-        Assertions.assertThrows(NullPointerException.class, () -> {
-            int a = 2 + 2;
-        });
+//        Assertions.assertThrows(NullPointerException.class, () -> {
+//            int a = 2 + 2;
+//        });
+        if(2==2){
+            Assertions.fail();
+        }
     }
 
 }
