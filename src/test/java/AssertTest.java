@@ -30,9 +30,13 @@ public class AssertTest {
 //        Iterable<Integer> list2 = new ArrayList<>(Arrays.asList(1,3,4,5,-1,-2));
 //
 //        Assertions.assertIterableEquals(list1, list2);
+//
+//        List<String> list1 = new ArrayList<>(Arrays.asList("Some string", "Another string"));
+//        List<String> list2 = new ArrayList<>(Arrays.asList("Some", "string", "Another string"));
+//        Assertions.assertLinesMatch(list1, list2);
 
-        List<String> list1 = new ArrayList<>(Arrays.asList("Some string", "Another string"));
-        List<String> list2 = new ArrayList<>(Arrays.asList("Some", "string", "Another string"));
-        Assertions.assertLinesMatch(list1, list2);
+
+        Assertions.assertNull(null);
+//        Assertions.assertNotNull();
     }
 }
