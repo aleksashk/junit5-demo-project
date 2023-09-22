@@ -20,7 +20,7 @@ public class AssertTest {
 
         int [] array1 = new int[]{1,2};
         int [] array2 = new int[]{0,2};
-        int [] array3 = new int[]{1,2};
-        Assertions.assertArrayEquals(array1, array2, "Arrays not equals");
+        int [] array3 = new int[]{1,2,3};
+        Assertions.assertArrayEquals(array1, array3, "Arrays not equals");
     }
 }
