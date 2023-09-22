@@ -21,6 +21,7 @@ public class AnnotationTest {
     }
 
     @Test
+    @Disabled("Просто так")
     public void test2(){
         System.out.println("@Test2");
     }
