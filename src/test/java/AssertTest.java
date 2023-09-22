@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,8 +39,14 @@ public class AssertTest {
 
 //        Assertions.assertNull("null");
 //        Assertions.assertNotNull(null);
+//
+//        Assertions.assertTrue(true);
+//        Assertions.assertFalse(false);
 
-        Assertions.assertTrue(true);
-        Assertions.assertFalse(false);
+        Assertions.assertTimeout(Duration.ofMillis(500),()->{
+            System.out.println("Start");
+            Thread.sleep(501);
+            System.out.println("Finish");
+        });
     }
 }
