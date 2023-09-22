@@ -36,7 +36,7 @@ public class AssertTest {
 //        Assertions.assertLinesMatch(list1, list2);
 
 
-        Assertions.assertNull(null);
+        Assertions.assertNull("null");
 //        Assertions.assertNotNull();
     }
 }
