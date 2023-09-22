@@ -1,8 +1,11 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class AnnotationTest {
+
+    @BeforeAll
+    public static void beforeAll(){
+        System.out.println("@BeforeAll");
+    }
 
     @BeforeEach
     public void beforeEach(){
@@ -23,6 +26,11 @@ public class AnnotationTest {
     @AfterEach
     public void afterEach(){
         System.out.println("@AfterEach");
+    }
+
+    @AfterAll
+    public static void afterAll(){
+        System.out.println("@AfterAll");
     }
 
 }
