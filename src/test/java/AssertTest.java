@@ -28,7 +28,7 @@ public class AssertTest {
 //        int [] array3 = new int[]{1,2,3};
 //        Assertions.assertArrayEquals(array1, array3, "Arrays not equals");
         Iterable<Integer> list1 = new ArrayList<>(Arrays.asList(1,2,3,4,5,-1,-2));
-        Iterable<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,3,4,5,-1,-2));
+        Iterable<Integer> list2 = new ArrayList<>(Arrays.asList(1,3,4,5,-1,-2));
 
         Assertions.assertIterableEquals(list1, list2);
 
