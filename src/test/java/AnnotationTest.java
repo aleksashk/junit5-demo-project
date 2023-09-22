@@ -32,5 +32,28 @@ public class AnnotationTest {
     public static void afterAll(){
         System.out.println("@AfterAll");
     }
+    @Nested
+    public class InnerClassTest{
+        @BeforeEach
+        public void beforeEach(){
+            System.out.println("@BeforeEach inner");
+        }
+
+
+        @Test
+        public void test(){
+            System.out.println("@Test inner");
+        }
+
+        @Test
+        public void test2(){
+            System.out.println("@Test2 inner");
+        }
+
+        @AfterEach
+        public void afterEach(){
+            System.out.println("@AfterEach inner");
+        }
+    }
 
 }
