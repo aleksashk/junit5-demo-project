@@ -37,6 +37,6 @@ public class AssertTest {
 
 
 //        Assertions.assertNull("null");
-        Assertions.assertNotNull("String");
+        Assertions.assertNotNull(null);
     }
 }
