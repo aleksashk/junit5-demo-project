@@ -8,7 +8,14 @@ public class AssertTest {
         int b = 2;
         int c = 3;
 
+        String s1 = "SOme";
+        String s2 = "SOme";
+        String s3 = "Some";
+
         Assertions.assertSame(a, b);
         Assertions.assertNotSame(a, c);
+
+        Assertions.assertEquals(s1, s2, "Strings the same");
+        Assertions.assertNotEquals(s1, s2, "Strings the same");
     }
 }
